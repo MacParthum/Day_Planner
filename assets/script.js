@@ -7,7 +7,6 @@ function getLocalStorage(key) {
 
 $(document).ready(function () {
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
-    
     for (let i = 9; i < 18; i++) {
 
         // create a row
@@ -16,17 +15,21 @@ $(document).ready(function () {
         // Create the time column
         var colOne = $('<div class="col-sm-2"> <p class="hour">' + formatTime(i) + '</p>');
 
-        //create column 2
+        // Created second column textarea 
+        var colTwo = $('<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Write here"></textarea>');
+
+        //create column 3
+
 
         // append col to row
         row.append(colOne);
-
-        // last step add rows to container
+        row.append(colTwo);
+        // Adds rows to the container
         $(".container").append(row);
 
         getLocalStorage(i);
     }
-    // sets # hours in the column 9am 10am .....
+          // sets hours in first row
     function formatTime(hours) {
         var amPm = hours >= 12 ? 'pm' : 'am';
         hours = hours % 12;
