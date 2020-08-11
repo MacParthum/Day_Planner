@@ -16,14 +16,15 @@ $(document).ready(function () {
         var colOne = $('<div class="col-sm-2"> <p class="hour">' + formatTime(i) + '</p>');
 
         // Created second column textarea 
-        var colTwo = $('<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Write here"></textarea>');
+        var colTwo = $('<div class="col-sm-8 present"><textarea id=text${i} class="description" placeholder="Write here"></textarea>');
 
         //create column 3
-
+        var colThree = $('<div class="col-sm-2"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>');
 
         // append col to row
         row.append(colOne);
         row.append(colTwo);
+        row.append(colThree);
         // Adds rows to the container
         $(".container").append(row);
 
