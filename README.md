@@ -1,32 +1,15 @@
 # Day-Planner
-Third-Party APIs Homework
 
-USER STORY
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+## Description
 
-BUSINESS CONTEXT
-Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity.
-
-MINIMUM REQUIREMENTS
-Functional, deployed application.
-
-GitHub repository with a unique name and a README describing project.
-
-The application displays timeblocks for standard business hours (9 a.m. to 5 p.m.).
-
-Each timeblock contains an input field and save button.
-
-Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
-
-The current day is displayed at the top of the calendar.
-
-Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+This is a day planner where the class is introduced to the fundamentals jquery.  It was difficult and chanllenging but with the help of my TA I managed to complete it and come out with a much better understanding of local storage, .on("click") events
+and how useful jquery is.
 
 
-GIVEN that an employee adds events to a specific hour in a calendar
+## Image of site 
 
-WHEN the employee clicks the save button
+![image of the working site](./assets/screenshot.PNG)
 
-THEN events are saved in the timeblock for that hour
+## Deployed Link
+
+[Day Planner]( https://macparthum.github.io/Day_Planner/)
